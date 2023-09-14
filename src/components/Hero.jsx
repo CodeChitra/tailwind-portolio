@@ -1,6 +1,6 @@
 // import heroImg from "../assets/hero.svg";
 import heroImg from "../assets/hero2.svg";
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import React from 'react'
 
 const Hero = () => {
@@ -13,14 +13,12 @@ const Hero = () => {
                     <p className="mt-4 text-2xl md:text-3xl text-slate-700 capitalize tracking-wide">Front-End Developer</p>
                     <p className="mt-2 text-lg text-slate-700 tracking-wide capitalize">turning ideas into interactive reality</p>
                     <div className="flex gap-x-4 mt-4">
-                        <a href="#">
+                        <a href="https://github.com/CodeChitra">
                             <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
                         </a>
-                        <a href="#">
+                        <a href="www.linkedin.com/in/codechitra
+">
                             <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
-                        </a>
-                        <a href="#">
-                            <FaTwitterSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
                         </a>
                     </div>
                 </article>

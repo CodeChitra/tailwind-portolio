@@ -1,8 +1,11 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import SectionTitle from "./SectionTitle";
-import { projects } from "../data";
+import useFetchProjects from '../custom-hook/fetchProjects';
 const Projects = () => {
+    const { isLoading, projects } = useFetchProjects();
+    console.log(isLoading);
+    console.log(projects);
     return (
         <section id='projects' className='py-20 cc-align-element'>
             <SectionTitle text="web creations" />
