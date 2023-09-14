@@ -16,7 +16,6 @@ const useFetchProjects = () => {
             const response = await client.getEntries({
                 content_type: "portfolio"
             })
-            console.log(response);
             setIsLoading(false);
             const data = response.items.map(item => {
                 const { title, description, demo, github, image } = item.fields;
@@ -26,7 +25,6 @@ const useFetchProjects = () => {
             })
             setProjects(data);
         } catch (error) {
-            console.log(error);
             setIsLoading(false);
         }
 
