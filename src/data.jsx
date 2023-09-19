@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import { FaHtml5, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
 // SiMongodb
-import { SiMongodb, SiExpress, SiTypescript, SiTailwindcss, SiRedux } from "react-icons/si";
+import { SiMongodb, SiExpress, SiTypescript, SiTailwindcss, SiRedux, SiNextdotjs, SiSass, SiReactrouter } from "react-icons/si";
 
 export const links = [
   { id: nanoid(), href: '#home', text: 'home' },
@@ -29,6 +29,12 @@ export const skills = [
     title: 'React',
     icon: <FaReact className='h-16 w-16 text-red-500' />,
     text: 'Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.',
+  },
+  {
+    id: nanoid(),
+    title: 'React Router Dom',
+    icon: <SiReactrouter className='h-16 w-16 text-red-500' />,
+    text: 'Mastery of React Router DOM enables seamless navigation and state management in React applications, enhancing user experiences through dynamic routing.',
   },
   {
     id: nanoid(),
@@ -66,31 +72,17 @@ export const skills = [
     icon: <SiTailwindcss className='h-16 w-16 text-red-500' />,
     text: 'Proficient in Tailwind CSS, creating responsive and visually appealing web interfaces with streamlined and utility-first styling.',
   },
+  {
+    id: nanoid(),
+    title: 'SASS',
+    icon: <SiSass className='h-16 w-16 text-red-500' />,
+    text: 'Proficient in Sass, I enhance web projects with efficient CSS preprocessing, streamlining styling and maintaining codebase consistency for superior design.',
+  },
+  {
+    id: nanoid(),
+    title: 'Next.JS',
+    icon: <SiNextdotjs className='h-16 w-16 text-red-500' />,
+    text: 'Skilled in Next.js, I create optimized web applications with server-side rendering and responsive design, delivering exceptional user experiences.',
+  },
 ];
 
-export const projects = [
-  {
-    id: nanoid(),
-    img: 'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800',
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'first project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
-  },
-  {
-    id: nanoid(),
-    img: 'https://images.pexels.com/photos/2148222/pexels-photo-2148222.jpeg?auto=compress&cs=tinysrgb&w=800',
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'second project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
-  },
-  {
-    id: nanoid(),
-    img: 'https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800',
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'third project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
-  },
-];
