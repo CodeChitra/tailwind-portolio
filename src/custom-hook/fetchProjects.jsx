@@ -16,12 +16,17 @@ const useFetchProjects = () => {
             const response = await client.getEntries({
                 content_type: "portfolio"
             })
+
+            console.log(response);
             setIsLoading(false);
             const data = response.items.map(item => {
                 const { title, description, demo, github, image } = item.fields;
                 const { url } = image.fields.file;
                 const id = item.sys.id;
-                return { id, title, description, demo, github, url }
+                debugger;
+                const tags = item.metadata.tags.map(tag => tag.sys.id);
+                console.log("Tags: ", tags);
+                return { id, title, description, demo, github, url, tags };
             })
             setProjects(data);
         } catch (error) {
